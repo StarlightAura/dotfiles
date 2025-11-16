@@ -69,7 +69,7 @@ plugins=(
 
 # Set-up oh-my-zsh
 # ~/.oh-my-zsh/oh-my-zsh.sh
-source $HOME/oh-my-zsh.sh
+source $ZSH/oh-my-zsh.sh
 
 # -----------------------------------------------------
 # Set-up FZF key bindings (CTRL R for fuzzy history finder)
@@ -139,7 +139,8 @@ alias dis='~/.dotfiles/common/scripts/vencord.sh'
 alias fusee='~/.dotfiles/common/scripts/fusee.sh'
 alias tabscreen='~/.dotfiles/common/scripts/tab-screen.sh'
 
-
+alias zed='/home/aura/.local/bin/zed.app/bin/zed'
+alias code='codium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland'
 
 export GPG_TTY=($tty)
 
@@ -183,12 +184,11 @@ export GPG_TTY=($tty)
 [[ -f /home/aura/.dart-cli-completion/zsh-config.zsh ]] && . /home/aura/.dart-cli-completion/zsh-config.zsh || true
 ## [/Completion]
 
-alias zed='/home/aura/.local/bin/zed.app/bin/zed'
-alias code='codium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland'
 ___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
 
 
-
+## Checks if terminal is kitty or cool-retro-term
+## incompatibility issues with ff and crt
 if [[ "$TERM" != "xterm" && "$TERM" != "xterm-256color" ]]; then
     fastfetch
 fi
