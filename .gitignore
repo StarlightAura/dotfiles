@@ -1,2 +1,3 @@
 */*.bin
 common/zsh/.zcompdump*
+common/scripts/logs

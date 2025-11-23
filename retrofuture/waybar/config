@@ -9,6 +9,7 @@
   "margin-left": 370,
   "modules-left": [
     "hyprland/workspaces",
+    "hyprland/submap",
     "sway/workspaces"
   ],
   "modules-center": [
@@ -25,6 +26,12 @@
     "disable-scroll": true,
     "all-outputs": false,
     "tooltip": false
+  },
+  "hyprland/submap": {
+    "format": "{}",
+    "max-length": 30,
+    "tooltip": false,
+    "on-click" : "hyprctl dispatch submap reset"
   },
   "sway/workspaces": {
     "disable-scroll": true,

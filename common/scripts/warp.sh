@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/usr/bin/bash
 
-sudo systemctl start warp-svc.service
+systemctl start warp-svc.service
 warpgui 

@@ -1,1 +1,3 @@
-sudo fusee-nano ~/.dotfiles/common/hekate_ctcaer_6.3.0.bin
+#!/usr/bin/bash
+
+sudo fusee-nano ~/.dotfiles/common/hekate.bin
